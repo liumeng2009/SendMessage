@@ -1,0 +1,28 @@
+<ion-view view-title="首页">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <input class="" type="text" name="dreamworker" ng-model="message.messageDreamworker"  >
+      </label>
+      <label class="item item-input">
+        <button class="button button-balanced" ng-click="WsendToDreams()">
+          dreamworker对dreams发送消息
+        </button>
+      </label>
+
+      <label class="item item-input">
+        <input class="" type="text" name="metrix" ng-model="message.messageMetrix" >
+      </label>
+      <label class="item item-input">
+        <button class="button button-balanced" ng-click="MsendToDreams()">
+          metrix对dreams发送消息
+        </button>
+      </label>
+      <label class="item item-input">
+        <label>{{messageDreamworker}}</label>
+      </label>
+    </div>
+
+  </ion-content>
+
+</ion-view>
