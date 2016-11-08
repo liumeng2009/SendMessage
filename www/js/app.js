@@ -23,7 +23,7 @@ angular.module('starter', ['ionic','mainController'])
       StatusBar.styleDefault();
     }
   });
-  iosocket = io.connect('http://liumeng.iego.cn/',{'reconnect':true,'force new connection': true});
+  iosocket = io.connect('http://liumeng.iego.cn/',{'reconnect':true});
 })
 .config(function($stateProvider){
   $stateProvider.state('main',{

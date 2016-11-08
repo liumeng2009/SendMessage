@@ -8,6 +8,7 @@ angular.module('mainController',[])
       iosocket.on('connect',function(){
         console.log('连接成功啦');
       });
+      iosocket.emit('add user','liumeng');
     });
     $scope.message={
 
@@ -24,5 +25,8 @@ angular.module('mainController',[])
     }
     $scope.MsendToDreams=function(){
       iosocket.emit('private message', '5794d04de7957f7d9aee21d6', '577bc1ffca1d345501cf73b2', $scope.message.messageMetrix);
+    }
+    $scope.MsendToAll=function(){
+      iosocket.emit('new message',$scope.message.messageAll);
     }
   }])
