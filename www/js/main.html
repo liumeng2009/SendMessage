@@ -2,7 +2,7 @@
   <ion-content>
     <div class="list">
       <label class="item item-input">
-        <input class="" type="text" name="dreamworker" ng-model="message.messageDreamworker"  >
+        <input class="" type="text" name="dreamworker" ng-model="message.messageDreamworker"  ng-keypress="inputChange()" >
       </label>
       <label class="item item-input">
         <button class="button button-balanced" ng-click="WsendToDreams()">
